@@ -1,0 +1,143 @@
+/*=========== RESET ==========*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+    font-family: 'Lato', sans-serif;}
+    body {background-color: #f5f5f5;}
+    a {text-decoration: none;}
+    ul {list-style: none;}
+    img {max-width: 100%;}
+/*=========== CONTAINER ==========*/
+.containers {width:100%; float: left; padding: 3% 4%; text-align: center;}
+
+/*=========== BG COLORS ==========*/
+.bg-gradient {background: linear-gradient(to right,#2e66ce,#09da3d);}
+.bg-black {background-color: #2c0e70; }
+.bg-white {background-color: #fff;}
+/*=========== HELPERS ==========*/
+.radius {border-radius: 7px;}
+
+/* CABEÇALHO */
+.logo {width: 56px; height: 56px; float: left; background: url(../img/logo-mobile.png) center center/56px no-repeat;
+font-size: 0;}
+.btn-menu {width: 56px; height: 56px; float: right; text-align: center; color: #fff; border-radius:56px; cursor: pointer;}
+.btn-sair {background-color: transparent; color:white;}
+
+
+/*COLORS*/
+.blue-logo {background-color:#2dc7d0;}
+.green-logo {background-color:#2dd05e;}
+
+/*MENU MODAL*/
+.navbar{background-color:transparent; transition: background 0.5s linear;}
+.navbar ul a{background-color:transparent;color:black;}
+.navbar ul a:hover{background-color:transparent;color:#da6709;}
+
+
+/*TITULO E PARAGRAFO*/
+.titulo {font-size: 2rem; text-transform: uppercase;}
+.titulo::after {content: '';display: block;width: 100px;border-top: 1px solid #2dc7d0; margin: 15px auto;}
+.paragrafo {line-height: 1.8rem;}
+.recado {font-size: 0.8rem;}
+
+/* CUSTOM */
+nav.nav-extended .nav-wrapper {min-height: 94px;}
+.navbar-fixed {position: absolute; height: 94px;}
+.nav-wrapper i {color: black;}
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {height: 94px; line-height: 94px;}
+
+.sidenav{background-color:transparent;}
+.sidenav li>a{color:#fff;font-weight:100;}
+
+.row{margin-bottom: 0;}
+
+.tabs {background-color: #222;}
+.tabs .tab a {color: #fff;}
+.tabs .tab a:hover, .tabs .tab a.active {color:#2dc7d0;}
+.tabs .indicator {background-color: #2dc7d0;}
+
+/* SERVIÇO */
+.servico {width: 100%;  text-align: left;  margin-bottom: 3%;}
+.servico img {border-radius: 7px 7px 0 0;}
+.inner {padding: 7%;}
+.inner a {font-size: 1.5em; color: #130400; font-weight: 700; }
+.inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%; }
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+.btn-planos{width: 35%;}
+.btn-planos a {font-size: 1em;}
+.modal a {font-size: 1em;}
+.space {background-color: rgba(128, 128, 128, 0.356);  border-radius: 2px;}
+
+
+/* FORMULARIO*/ 
+.formulario input[type="submit"]{font-size: 1em; margin-bottom: 10px;}
+
+/* TABELA */
+.tab-edit {background-color: transparent; cursor: pointer; color: transparent; background-image: url(../img/edit.png); background-repeat: no-repeat; background-size: 20px, 20px; background-position: center;}
+.tab-delet {background-color: transparent; cursor: pointer; color: transparent; background-image: url(../img/delete.png);background-repeat: no-repeat;background-size: 20px, 20px;background-position: center;}
+
+/* NEWSLETTER */
+.newsletter h2 {font-size: 1.5em; color: #fff; font-weight: 700;}
+.newsletter h3 {color: #fff;}
+.newsletter form {margin-top: 2%;}
+.newsletter input {width: 100%;  color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 5%; }
+.newsletter button {width: 100%;  color:#130400; padding: 5%; cursor: pointer; margin-top: 2%; }
+
+/* RODAPÉ */
+.social-icons a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:2%;}
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+    .logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat;}
+    .btn {font-size: 2em;}
+    .btn-planos{width: 25%;}
+    .btn-sair {color:white;}
+    .login input {min-width:100%;}
+    .sidenav-trigger a{margin:15px 18px;}
+    }
+    /* SMALL DEVICES - TABLETS*/
+    @media screen and (min-width: 768px) {
+    .btn-sair {color:white;}
+    .servico {width: 49%; float: left; margin-right: 2%;}
+    .servico:nth-child(2){margin-right: 0;}
+    .btn-planos{width: 20%;}
+    .newsletter h2 {font-size: 2em;}
+    .newsletter h3 {font-size: 1.5em;}
+    .newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
+    .newsletter button {width: 29%; padding: 2%; float: right; margin-top: 0;}
+    .login input {min-width:50%;}
+    .sidenav-trigger a{margin:15px 18px;}
+    }
+    /* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+    @media screen and (min-width: 960px) {
+    .title {width: 70%; float: left; text-align: left;}
+    .title h2 {font-size: 3em;}
+    .title h3 {font-size: 2em;}
+    .buttons {width: 30%; float: right; margin-top: 0; }
+    .btn-sair {color:white;}
+    .servico {width: 32%; }
+    .servico:nth-child(2){margin-right: 2%;}
+    .servico:nth-child(3){margin-right: 0;}
+    .newsletter input {width: 60%; float: none;}
+    .newsletter button {width: 20%; float: none;}
+    .login input {min-width:50%;}
+    .sidenav-trigger a{margin:15px 18px;}
+    }
+    /* LARGE DEVICES - WIDE SCREENS*/
+    @media screen and (min-width: 970px) {
+    .btn-menu {display: none;}
+    .btn-close {display: none;}
+    .btn-sair {color:#da6709;cursor: pointer;}
+    .menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; 
+    display: block !important; position: static;}
+    .menu li {padding: 0; float: center;}
+    .menu li a {color:#130400; font-size: 1em; padding: 15px; }
+    .menu li a:hover {border: none; color:#da6709; }
+    .login input {min-width:50%;}
+    }
+
+    
